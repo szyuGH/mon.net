@@ -1,6 +1,6 @@
 ﻿namespace Mon.NetClient
 {
-    partial class Service1
+    partial class SelfHostService
     {
         /// <summary> 
         /// Erforderliche Designervariable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.ServiceName = "SelfHostService";
         }
 
         #endregion
