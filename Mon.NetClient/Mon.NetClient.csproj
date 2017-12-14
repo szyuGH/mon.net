@@ -77,5 +77,11 @@
     <None Include="app.manifest" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonCore\MonCore.csproj">
+      <Project>{6d5a4d60-7444-494b-8e7c-5aa10e221c78}</Project>
+      <Name>MonCore</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,15 +7,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace Mon.NetClient
+namespace MonCore
 {
     public class MonitoringController : ApiController
     {
         [HttpPost]
         public HttpResponseMessage process()
         {
-
-            return Request.CreateResponse(HttpStatusCode.OK);
+            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
+            
+            return response;
         }
     }
 }
