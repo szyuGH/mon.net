@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Management;
 using System.Reflection;
@@ -47,6 +48,18 @@ namespace MonCore
             //ServiceController controller = new ServiceController("lfsvc");
             //PropertyInfo val = typeof(ServiceController).GetProperty("Status");
             //Console.WriteLine($"{val.Name}: {val.GetValue(controller)}");
+
+
+
+            /*
+             Method:    PRC
+             Path:      postgres
+             Query:     Id
+             */
+            //Process prc = Process.GetProcessesByName("postgres").FirstOrDefault();
+            //PropertyInfo pi = typeof(Process).GetProperty("Id");
+            //Console.WriteLine($"{prc.ProcessName}: {pi.Name}: {pi.GetValue(prc)}");
+
 
             return null;
         }
