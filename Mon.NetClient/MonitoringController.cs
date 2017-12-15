@@ -11,11 +11,21 @@ namespace MonCore
 {
     public class MonitoringController : ApiController
     {
-        [HttpPost]
-        public HttpResponseMessage process()
+        MonitoringProcessor processor;
+
+        public MonitoringController()
+            :base()
         {
+            processor = new MonitoringProcessor();
+        }
+
+        [HttpPost]
+        public HttpResponseMessage process([FromBody]MonRequest monRequest)
+        {
+            object monResponse = processor.Invoke(monRequest);
+
+
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
-            
             return response;
         }
     }

@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mon.NetClient", "Mon.NetClient\Mon.NetClient.csproj", "{36DE64C7-F6BF-4435-98C3-7533A3FC9B53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mon.NetServer", "Mon.NetServer\Mon.NetServer.csproj", "{A429467C-4562-4781-947C-870287B3A91F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mon.NetServer", "Mon.NetServer\Mon.NetServer.csproj", "{A429467C-4562-4781-947C-870287B3A91F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonCore", "MonCore\MonCore.csproj", "{6D5A4D60-7444-494B-8E7C-5AA10E221C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonProcessorTests", "MonProcessorTests\MonProcessorTests.csproj", "{389BA4DE-3F44-49BB-ACCF-6DC28774CDFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6D5A4D60-7444-494B-8E7C-5AA10E221C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5A4D60-7444-494B-8E7C-5AA10E221C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5A4D60-7444-494B-8E7C-5AA10E221C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389BA4DE-3F44-49BB-ACCF-6DC28774CDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389BA4DE-3F44-49BB-ACCF-6DC28774CDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389BA4DE-3F44-49BB-ACCF-6DC28774CDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389BA4DE-3F44-49BB-ACCF-6DC28774CDFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
