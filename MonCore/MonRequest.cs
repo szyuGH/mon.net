@@ -9,6 +9,7 @@ namespace MonCore
     public struct MonRequest
     {
         public string Method;
-
+        public string Path;
+        public string Query;
     }
 }

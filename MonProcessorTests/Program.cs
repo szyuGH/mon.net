@@ -13,10 +13,13 @@ namespace MonProcessorTests
         {
             MonRequest req = new MonRequest
             {
-
+                Method = "CMD",
+                Path = "netstat",
+                Query = "-t -o"
             };
             MonitoringProcessor processor = new MonitoringProcessor();
             object res = processor.Invoke(req);
+            Console.WriteLine(res);
 
             Console.ReadLine();
         }
